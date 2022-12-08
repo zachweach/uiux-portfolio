@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brown Theatre Collective</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/gallery.css">
+    <link rel="icon" type="image/x-icon" href="./assets/btc.ico">
+  </head>
+  <body>
+    <header>
+      <a href="./" id="title">hi, im shyworm!</a>
+      <button id="hamburger-menu"></button>
+      <nav id="navbar">
+        <a href="./personas">personas</a>
+        <a href="./redesign">responsive redesign</a>
+        <a href="./iterative">iterative design</a>
+        <a href="./development">development</a>
+      </nav>
+    </header>
+    <main id="root">
+      <section>
+        <h1>Iterative Design</h1>
+        <p>We selected an emerging startup and designed an interactive interface using their vision. We went through the full process of mocking up a solution to the startup's concept.</p>
+      </section>
+      <section>
+        <h2>Selecting a Startup</h2>
+        <p>We had to pick a recent startup from Y Combinator and attempt to design a prototype of an interface that would solve the startup's problem, but without looking at any of the startup's products.</p>
+        <p>For our startup, we selected Tangia, a monetization platform for streamers that enables viewers to buy interactions that affect the game being streamed in real time. For example, a viewer pays $15 to spawn a boss enemy, and it instantly appears in the streamer's Minecraft world.</p>
+        <p>We read <a href="https://www.ycombinator.com/companies/tangia">Tangia's vision on Y Combinator</a>, but did not view any of their designed interfaces before completing the project.</p>
+      </section>
+      <section>
+        <h2>Sketching & Wireframing</h2>
+        <h3>Pre-Design Thinking</h3>
+        <p>Tangia affects both the viewers and the streamers. Because we would expect the viewers and the streamers to see two very different interfaces, we decided to focus solely upon the interface for viewers. We sketched a variety of possible interfaces, all of which were intended for desktop.</p>
+        <h3>Sketching</h3>
+        <p>We explored several design alternatives in order to imagine what Tangia might look like.</p>
+        
+        <!-- rounded's sketches -->
+        <h4>Tangia envisioned as a standalone streaming site integrated with streaming servies to both interact with and watch a stream.</h4>
+        <figure>
+          <img src='assets/rounded_sketches.png' alt=''/>
+          <figcaption> 
+            <ul>
+              <li>Top: vertical scrolling and item checkout selection with a pop-out tab</li>
+              <li>Middle: Horizontal scrolling with a checkout pop-out tab</li>
+              <li>Bottom: Horizontal scrolling with horizontal expanding tab</li>
+            </ul>
+            <p>(<a href='assets/rounded_sketches.png'>enlarge sketch</a>)</p>
+          </figcaption>
+        </figure>
+        
+        <!-- shyworm's sketches -->
+        <h4>Tangia envisioned as a standalone website that will accompany other streaming services (such as Twitch, YouTube, etc).</h4>
+        <figure>
+          <img src='assets/shyworm_sketches.png' alt=''/>
+          <figcaption> 
+            <ul>
+              <li>Top: home page with a welcome message, recommended streams, and search/browsing options in the left navigation bar</li>
+              <li>Bottom Left: streamer's page with a preview of their stream and scrollable content of the purchasable interactions. The navigation bar from the home page remains.</li>
+              <li>Bottom Right: built on the streamer's page, the checkout page appears like a pop-up that blocks the rest of the screen while the user purchases the interaction.</li>
+            </ul>
+            (<a href='assets/shyworm_sketches.png'>enlarge sketch</a>)
+          </figcaption>
+        </figure>
+       
+        <!-- sleepyotter's sketches -->
+        <h4>Tangia envisioned as an embedded feature on a streaming service such as Twitch.</h4>
+        <figure>
+          <img src='assets/embedded1.JPG' alt=''/>
+          <figcaption> Interactivity of hover within the embedded feature(<a href='assets/interface_sketch.png'></a>)</figcaption>
+          <img src='assets/embeddedselect.JPG' alt=''/>
+          <figcaption>Version of the spawn in feature selections with descriptions and images not grouped together (<a href='assets/interface_sketch.png'>enlarge sketch</a>)</figcaption>
+          
+          <img src='assets/embeddedselectdescription.JPG' alt=''/>
+          <figcaption>Popup of what image and description grouping would look like (<a href='assets/interface_sketch.png'>enlarge sketch</a>)</figcaption>
+        
+          <img src='assets/embeddedcheckout.JPG' alt=''/>
+          <figcaption>Option for pricing where pricing is determined by how long until the feature would be spawned in stream. (<a href='assets/interface_sketch.png'>enlarge sketch</a>)</figcaption>
+  
+  
+          <img src='assets/timeuntilspawn.JPG' alt=''/>
+          <figcaption>Another option where timing could be specifically determined and would affect pricing. (<a href='assets/interface_sketch.png'>enlarge sketch</a>)</figcaption>
+        </figure>
+        
+        <!-- mawkishmeerkat's sketches -->
+        <h4>Tangia envisioned as a standalone streaming site integrated with streaming servies to both interact with and watch a stream.</h4>
+        <figure>
+          <img src='assets/meerkat.JPG' alt=''/>
+          <figcaption>
+            Clockwise, starting from top: sign-in page; profile picture with input boxes for information and buttons for logout and saving/canceling new information; payment page for adding a card info; streamer profile page whereon the user can but interactions; home page where user can search for streamers and see streamers she follows.
+            (<a href='assets/meerkat.JPG'>enlarge sketch</a>)
+          </figcaption>
+        </figure>
+        
+        <h3>Combining Ideas into a Wireframe</h3>
+        <p>After a group design sprint, we took the best elements of each sketch to create one cohesive wireframe for a standalone interface. There were many possible ways for Tangia to exist (such as a feature embedded in streaming services or a browser extension), but we decided to move forward envisioning Tangia as a standalone site.</p>
+        <figure>
+          <img src="assets/wireframe.png">
+          <figcaption>Wireframe that combined our ideas from our individual sketches. (<a href="assets/wireframe.png">enlarge wireframe</a>)</figcaption>
+        </figure>
+        <p>This final wireframe incorporated ideas from all of our sketches.</p>
+        <ul>
+          <li>From the browser extension, we took the sign-in page and navigation bar formats.</li>
+          <li>From the embedded sketch, we took the idea of a “interaction delay” for purchasable items and the grouping of purchasable items into visually distinct boxes.</li>
+          <li>From the standalone accompanying site, we took the “recommended streams” on the home page and the design of the home page in general.</li>
+          <li>From the standalone site integrated with streaming services, we took vertical scrolling and a banner for the active launch</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Mockups</h2>
+        <h3>Interactive High-Fidelity Mockup</h3>
+        <p>
+          Next, we created an interactive high-fidelity prototype, which is an enhanced version of the combined wireframe, populated with sample realistic content. Feel free to interact with the prototype and navigate through the different screens. 
+        </p>
+        <figure>
+          <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLMDZCLdjD5Z8SmkTdak7AC%2FTangia-Re-design%3Fnode-id%3D1%253A338%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A833" allowfullscreen></iframe>
+          <figcaption>Figma prototype of our Tangia interface before critique</figcaption>
+        </figure>
+        <h3>Mockup Critique</h3>
+        <p>
+          After designing our high-fidelity prototype, we shared with 30 other people and received feedback and critiques from them. The critiques and the changes we implemented in response to the critiques are listed below.
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th id="left-col-header">Critique Received</th>
+              <th id="right-col-header">Change Implemented</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Provide reassurance for users in regards to security for payment </td>
+              <td>Added a lock icon next to the payment information in account settings</td>
+            </tr>
+            <tr>
+              <td>Search bar in right rail is confusing</td>
+              <td>Removed the search bar from the right rail</td>
+            </tr>
+            <tr>
+              <td>Badges had unclear meaning</td>
+              <td>Removed badges from account page completely</td>
+            </tr>
+            <tr>
+              <td>Dark mode takes up too much space on the nav bar</td>
+              <td>Removed dark mode from the nav bar and placed it in the account page and only kept it in sign in</td>
+            </tr>
+            <tr>
+              <td>Breathability</td>
+              <td>Removed the search bar from the right rail, reduced size of top nav bar, reduced right rail to ⅔ the  original size</td>
+            </tr>
+            <tr>
+              <td>Unclear color hierarchy. Colors don't have consistent meaning in regards to their function.</td>
+              <td>Adhered to a consistent visual style so that button colors and background colors, etc are all consistently used throughout the different pages of the site. Things that looked similar to buttons were changed to avoid confusion.</td>
+            </tr>
+            <tr>
+              <td>Despite the importance of the stream, it was relatively small on the page. Unable to see the chat</td>
+              <td>Made stream bigger</td>
+            </tr>
+            <tr>
+              <td>Unclear if the streaming page was a page for a specific streamer or the user's profile page. Confused by the big logo with username with the streamer name. Unsure if that is  their name or the streamer's name</td>
+              <td>Added "[streamer name] is streaming [game name]"" to clarify that the streaming page is the streaming page and made the name and image smaller</td>
+            </tr>
+            <tr>
+              <td>Would this have compatibility with other streaming platforms like youtube or facebook? People felt main purpose of Tangia was more so a streaming platform rather than a support to make streams more interactive</td>
+              <td>Added a return to Twitch button and the location of stream is now indicated under the description of streams</td>
+            </tr>
+            <tr>
+              <td>In-app currency</td>
+              <td>Replaced money with tangerines (like bits on Twitch)</td>
+            </tr>
+            <tr>
+              <td>Confused if users have the ability to switch which streamer they are watching within Tangia</td>
+              <td>Added home page with multiple suggested / previously watched streamers and a search bar so that users can search for different streamers. This also aids in site navigation.</td>
+            </tr>
+          </tbody>
+          </table>
+        <p>
+          We modified our previous prototype, which you can interact with here. 
+        </p>
+        <figure>
+          <iframe width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FLMDZCLdjD5Z8SmkTdak7AC%2FTangia-Re-design%3Fnode-id%3D55%253A1543%26scaling%3Dcontain%26page-id%3D1%253A1119%26starting-point-node-id%3D55%253A2475" allowfullscreen></iframe>
+          <figcaption>Figma prototype of our Tangia interface after implementing suggestions from critique</figcaption>
+        </figure>
+        <p>
+          Design choices to achieve the original goals of the startup:
+        </p>
+        <ul>
+          <li>
+            Including a "dark mode" appeals to the intended audience of Tangia, which is gamers who frequently prefer a dark mode.
+          </li>
+          <li>
+            Centralized the purchasable interactions to put them higher in the visual hierarchy.
+          </li>
+          <li>
+            Heavily featured stream spawn stats and recent interactions from other users to both emphasize and engage users primarily in the form of in-game interactions.
+          </li>
+          <li>
+            Gamified purchasing using Tangerines (&#127818;) to incentivize spending for the intended audience of gamers.
+          </li>
+          <li>
+            We chose to always have a method on each page to directly return to the most recent stream the user has spawned an item for.
+          </li>
+          <li>
+            The checkout window is unintrusive and doesn't obscure the main functionality of the page, which is browsing interactions and watching the livestream.
+          </li>
+          <li>
+            After making a purchase, the interaction appears in the top bar; this maintains engagement by keeping interactions in view and in mind before they spawn in stream.
+          </li>
+          <li>
+            The home page increases engagement with streamers by showing recommendations for new streams that the viewer might not have seen before.
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>User Testing</h2>
+        <h3>Assigned Task</h3>
+        <p>Imagine you are a viewer of the Twitch streamer thejocraft_live. Buy a "Creeper Mob Spawn!" interaction and confirm the purchase in your order history. Please think aloud as you perform the task. You will be interacting with a Figma prototype and not a fully functional website.</p>
+        <h3>Testing Instructions via <a href="https://www.usertesting.com/">UserTesting.com</a></h3>
+        <p>Listed here are the instructions given to users while testing the prototype.</p>
+        <ol>
+          <li>Choose between light or dark mode, and sign in please.</li>
+          <li>Do not click on anything yet please! Describe what you are seeing on the home page. How would you interact with this page?</li>
+          <li>Please proceed to thejocraft_live's stream page, and describe what you are seeing on the page and what you would do. </li>
+          <li>Please purchase a "Creeper Mob Spawn!" interaction for thejocraft_live's stream. Please remember to describe your thought process as you work through this task!</li>
+          <li>How do you know that your purchase registered? </li>
+          <li>If you have not yet, please confirm your purchase in your order history.</li>
+          <li>How would you navigate to the home page?</li>
+        </ol>
+        <h3>Analysis of Results</h3>
+        <h4>Expectations</h4>
+        <p>We expect the home page and checkout process to be intuitive and smooth.</p>
+        <p>We primarily think that the task of navigating to order history might be more difficult for users.</p>
+        <p>In addition, we suspect that subjects may be confused about the overall purpose of the site (such as what the embedded Twitch stream is for).</p>
+        <h4>Observations and Errors</h4>
+        <p>We had three users test our site: Vikingevaluator, Tubbington, and Sessa925.</p>
+        <figure>
+          <blockquote>
+            "I would be able to spawn certain types of, probably, characters in the game to make it more enjoyable and maybe to participate in the game. This is very interesting, by the way. The viewer is not only watching the scene but also participating in the gameplay. This is very nice."
+          </blockquote>
+          <figcaption>-Vikingevaluator</figcaption>
+        </figure>
+        <figure>
+          <video width="800" height="450" controls>
+            <source src="assets/UserTestingA.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Screencapture of Vikingevaluator's walkthrough of our prototype</figcaption>
+        </figure>
+        <figure>
+          <video width="800" height="450" controls>
+            <source src="assets/UserTestingB.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Screencapture of Tubbington's walkthrough of our prototype</figcaption>
+        </figure>
+        <figure>
+          <video width="800" height="450" controls>
+            <source src="assets/UserTestingC.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <figcaption>Screencapture of Sessa925's walkthrough of our prototype</figcaption>
+        </figure>
+        <ul>
+          <li>Vikingevaluator did not make it to the order history but did everything else; Tubbington did everything; Sessa925 did not complete an order but did everything else.</li>
+          <li>Tubbington initially thought that the images on the homepage led to clips of previous streams rather than previous streams. Sessa925 was unsure why she would want to go back to a stream she recently watched.</li>
+          <li>Vikingevaluator did not make it to the order history as we thought might happen.</li>
+          <li>Tubbington first clicked the watch history in the account to attempt to go back to home. His second option was correctly the Tangia logo. He later said that clicking the logo was self-explanatory.</li>
+          <li>Sessa925 could not click on the scroll bar and scroll, which is an unfortunate limitation of Figma.</li>
+        </ul>
+        <h4>Possible Improvements</h4>
+        <p>The issue which Sessa925 ran into seems the most important to resolve, but it is not actually something we can fix because of Figma itself.</p>
+        <p>To clarify Tubbington and Sessa925's critiques, we would change the wording of "Recently Watched" to be "Current Stream" instead.</p>
+        <p>Two possible solutions to address Vikingevaluator's confusion: we could either put an exclamation mark on the profile icon to indicate that attention is warranted on the profile page, or we could add a bell icon with a number that indicates how many notifications the user has, including purchase notifications.</p>
+      </section>
+      <section>
+        <h2>Contacting the Startup</h2>
+        <p>To round out the project, we contacted the Tangia team and shared our project with them. Here's a copy of our email.</p>
+        <hr>
+        <p>
+          Hello!
+          <br><br>
+          We are sleepyotter, roundthings, mawkishmeerkat, and shyworm-our students from Brown University taking a class in UI / UX! We are concluding a group project in which we had to pick a recent startup from Y Combinator and attempt to design a prototype of an interface that would solve the startup's problem, but without looking at any of the startup's products. We were intrigued by the premise of your company—allowing viewers to interact with their favorite streamers—so we chose to tackle a prototype for Tangia! We decided to create a standalone website interface for viewers. Specifically, we created a prototype in Figma that allows a viewer to log in, navigate to a favorite streamer, and spawn creepers into the game! If you are interested, we have shared the Figma prototype with you. We can also share with you the whole writeup for our project if you would like! We would love to hear your thoughts on what we created!
+          <br><br>
+          Warmly,<br>
+          sleepyotter, roundthings, mawkishmeerkat, and shyworm
+        </p>
+      </section>
+      <section>
+        <p>
+          Made with <font color="darkpink">&hearts;</font> by <a target="_blank" href="https://www.youtube.com/watch?v=U76zyUFg3Xo&ab_channel=TLKSongs">mawkishmeerkat</a>, roundthings,  <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0">shyworm</a> , <a href="https://www.youtube.com/watch?v=cPJUBQd-PNM">sleepyotter</a>.
+          <br><br>
+          Big shoutout to Jeff and CaptainSparklez (<a target="_blank" href="https://www.youtube.com/c/CaptainSparklez">creeper aw man</a>)!!<br>
+          Screenshots and video of streams taken from <a target="_blank" href="https://www.twitch.tv/thejocraft_live">thejocraft_live</a>, <a target="_blank" href="https://www.twitch.tv/sydeon">Sydeon</a>, and <a target="_blank" href="https://www.twitch.tv/fgmoo">fgmoo</a>.<br>
+          Software used in the creation of this webpage includes Figma and <a target="_blank" href="https://www.usertesting.com/">UserTesting.com</a>.<br>
+          Credit to <a target="_blank" href="https://www.twitch.tv/">Twitch</a>, <a target="_blank" href="https://www.youtube.com/">YouTube</a>, and <a target="_blank" href="https://www.minecraft.net/en-us">Minecraft</a>.<br>
+          Image for profile picture in Figma prototype take from <a target="_blank" href="https://www.shutterstock.com/image-photo/portrait-positive-man-woman-workers-picking-1888598104">Shutterstock</a>.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <section class="left">
+        <h3>UI/UX Portfolio</h3>
+        <p>Thanks for checking out my page! This site was made for a portfolio project for a <a href="https://cs.brown.edu/courses/csci1300/">UI/UX course</a> at Brown.</p>
+      </section>
+      <section class="right">
+        <h3>Contact me!</h3>
+        <p>If you want to get in touch, feel free to contact me at <a href="mailto:shyworm@notarealemail.com">shyworm@notarealemail.com</a>.</p>
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./js/index.js"></script>
+</html>

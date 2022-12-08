@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brown Theatre Collective</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/gallery.css">
+    <link rel="icon" type="image/x-icon" href="./assets/btc.ico">
+  </head>
+  <body>
+    <header>
+      <a href="./" id="title">hi, im shyworm!</a>
+      <button id="hamburger-menu"></button>
+      <nav id="navbar">
+        <a href="./personas">personas</a>
+        <a href="./redesign">responsive redesign</a>
+        <a href="./iterative">iterative design</a>
+        <a href="./development">development</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Responsive Redesign</h1>
+        <p>Through this assignment, my goal was to practice the workflow of redesigning a simple website. I practiced the skills necessary to analyze and identify flaws in an existing interface, create low-fidelity and high-fidelity prototypes for various screen sizes, and build a responsive website based on those prototypes.</p>
+      </section>
+      <section>
+        <h2>Identifying Usability Problems</h2>
+        <h3>Picking a Web Page</h3>
+        <p>After moving to college, there wasn't a ton I missed from my home town. Of course, I miss my family and friends, but I also found myself missing Franco's Panzarottis. Calzones, while similar, simply do not satisfy the same itch.</p>
+        <p>After looking at the website for <a href="https://www.francosplace.com/index.html">Franco's Place</a>, a Panzarotti shop in my home town, I noticed that it could probably benefit from a redesign.</p>
+        <figure>
+          <img src="assets/redesign/francos.png" alt="" />
+          <figcaption>screenshot of Franco's Place website homepage (<a href='assets/redesign/francos.png'>enlarge screenshot</a>)</figcaption>
+        </figure>
+        <p>Looking at the site on my phone revealed an even bigger need for a redesign!</p>
+        <figure>
+          <img src="assets/redesign/mobile.png" alt="" />
+          <figcaption>screenshot of Franco's Place mobile homepage (<a href='assets/redesign/mobile.png'>enlarge screenshot</a>)</figcaption>
+        </figure>
+        <h3>Finding Problems</h3>
+        <p>In order to concretely define the usability problems with the site, I used three categories of criteria. From there, I used Jakob Nielson's <a href="https://www.nngroup.com/articles/ten-usability-heuristics/#:~:text=Jakob's%20Law%20states%20that%20people,them%20to%20learn%20something%20new.">10 usability heuristics</a> to further identify issues with the page.</p>
+        <ul>
+          <li>Usability</li>
+          <ul>
+            <li>The main content of the page is obscured by the large image at the top of the page</li>
+            <li>The page title (in the navigation bar) is in all caps and has lots of text, which makes it hard to read and formats poorly on smaller screens.</li>
+            <li>The title text is very long and conveys information that is available elsewhere on the page.</li>
+          </ul>
+          <li>Efficiency</li>
+          <ul>
+            <li>There are two buttons for the menu, one in the navigation bar and one in the main content.</li>
+            <li>These two menu buttons have different textual content, but lead to the same site.</li>
+            <li>The critical contact information is at the bottom of the page, which is below information on what a panzarotti is. Users will likely need to reference this contact info more than once, but will not need to read the explanation more than once.</li>
+          </ul>
+          <li>Learnability</li>
+          <ul>
+            <li>The text of the main content is difficult to read due to the busy background image.</li>
+            <li>The navigation bar text has an inconsistent font format (capitalization and slashes).</li>
+            <li>Some text on the page is underlined, but is not a link, which can be confusing.</li>
+            <li>The logo and banner are at bottom of the page, which conveys no new information that far into the page and would be better for branding as the first thing you see. By the time you scroll down on the page, the logo is unnecessary since you will already know what page you are on.</li>
+          </ul>
+        </ul>
+        <h3>Accessibility</h3>
+        <p>Using the <a href="https://wave.webaim.org/">WebAIM WAVE</a> tool for web accessibility evaulation, I found some accessibility issues with the original webpage.</p>
+        <p>Enumerated here are some accessibility problems I detected:</p>
+        <ul>
+          <li>Alt text for all of the images is just "*Picture*" instead of descriptive text</li>
+          <li>The main content text has many contrast errors and the background image makes text hard to read</li>
+          <li>There is no <code>h1</code> element and all of the <code>h2</code> elements are used differently</li>
+          <li>Some links have bad descriptive text (such as "click here")</li>
+          <li>Information is conveyed through images with no alt text, including via background images</li>
+          <li>The navigation bar is an unordered list instead of the semantic <code>nav</code> element</li>
+          <li>There is no link to skip to the main content.</li>
+          <li>When displaying <a href="https://francosplace-com.translate.goog/index.html?_x_tr_sch=http&_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=en&_x_tr_pto=wapp">the page in Arabic</a>, the phone number display the wrong orientation.</li>
+        </ul>
+        <p>In my redesign, I sought to fix these accessibility issues as well.</p>
+      </section>
+      <section>
+        <h2>Visual Redesign</h2>
+        <p>Based on the previously identified problems, I have redesigned the website of Franco's Place.</p>
+        <h3>Low-fidelity Wireframing</h3>
+        <p>To start with the redesign, I sketched a few wireframes for three screen sizes: mobile, tablet, and desktop. The design remains similar, yet responsive for each screen size. Annotated on each image is how I addressed the usability and accessibility problems with the new design.</p>
+        <figure>
+          <img src="assets/redesign/wireframe_laptop.png" alt="" />
+          <figcaption>wireframe of the desktop redesign (<a href='assets/redesign/wireframe_laptop.png'>enlarge wireframe</a>)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/redesign/wireframe_tablet.png" alt="" />
+          <figcaption>wireframe of the tablet redesign (<a href='assets/redesign/wireframe_tablet.png'>enlarge wireframe</a>)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/redesign/wireframe_phone.png" alt="" />
+          <figcaption>wireframe of the mobile redesign (<a href='assets/redesign/wireframe_phone.png'>enlarge wireframe</a>)</figcaption>
+        </figure>
+        <h3>Visual Design Style Guide</h3>
+        <p>Before making any high-fidelity prototypes, I wanted to decide the style of the redesigned page by making a style guide.</p>
+        <p>In this guide, I show the main colors, typography, and components of the page.</p>
+        <figure>
+          <img src="assets/redesign/style_guide.png" alt="" />
+          <figcaption>visual design style guide (<a href='assets/redesign/style_guide.png'>enlarge style guide</a>)</figcaption>
+        </figure>
+        <p>This guide shows the expected style of visual elements on the page. Base states and interaction states (such as hovering over a link) are annotated alongside the appropriate styles.</p>
+        <h3>High-fidelity Prototyping</h3>
+        <p>To finish up designing, I used my visual design style guide to build some higi-fidelity mockups of what the wite will look like.</p>
+        <p>Here, I have designed three prototypes in Figma for three different screen sizes. Each is annotated with the key styling components, including flex boxes and how links change on hover.</p>
+        <p>Due to the responsive measurements of elements, the in-between dimensions between these prototypes should look similar.</p>
+        <p>Since I employed a mobile-first design paradigm, Any changes expressed in the smaller screens is also continued in the larger screens, unless overridden.</p>
+        <figure>
+          <img src="assets/redesign/hifi_phone.png" alt="" />
+          <figcaption>high-fidelity prototype on a mobile screen size (<a href='assets/redesign/hifi_phone.png'>enlarge prototype</a>)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/redesign/hifi_tablet.png" alt="" />
+          <figcaption>high-fidelity prototype on a tablet screen size (<a href='assets/redesign/hifi_tablet.png'>enlarge prototype</a>)</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/redesign/hifi_laptop.png" alt="" />
+          <figcaption>high-fidelity prototype on a desktop screen size (<a href='assets/redesign/hifi_laptop.png'>enlarge prototype</a>)</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Responsive Redesign</h2>
+        <p>Using the final high-fidelity prototypes, I then created the page using HTML and CSS. Navigational elements do not actually redirect, and other dynamic elements are recreated visually, but are not yet interactive.</p>
+        <p>Here, you can view the <a href="assets/redesign/francos/index.html">redesigned Franco's Place site</a>. Try resizing to see the responsive elements!</p>
+        <p>Additionally, try changing the font size or translating the page with Google Translate (here's <a href="https://shyworm130-github-io.translate.goog/redesign/assets/redesign/francos/index.html?_x_tr_sl=en&_x_tr_tl=ar&_x_tr_hl=en&_x_tr_pto=wapp">the responsive page translated to Arabic</a>!)</p>
+      </section>
+    </main>
+    <footer>
+      <section class="left">
+        <h3>UI/UX Portfolio</h3>
+        <p>Thanks for checking out my page! This site was made for a portfolio project for a <a href="https://cs.brown.edu/courses/csci1300/">UI/UX course</a> at Brown.</p>
+      </section>
+      <section class="right">
+        <h3>Contact me!</h3>
+        <p>If you want to get in touch, feel free to contact me at <a href="mailto:shyworm@notarealemail.com">shyworm@notarealemail.com</a>.</p>
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./js/index.js"></script>
+</html>

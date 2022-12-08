@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brown Theatre Collective</title>
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="icon" type="image/x-icon" href="./assets/btc.ico">
+  </head>
+  <body>
+    <header>
+      <a href="./" id="title">hi, im shyworm!</a>
+      <button id="hamburger-menu"></button>
+      <nav id="navbar">
+        <a href="./personas">personas</a>
+        <a href="./redesign">responsive redesign</a>
+        <a href="./iterative">iterative design</a>
+        <a href="./development">development</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h1>Personas and Storyboarding</h1>
+        <p>Step into a user's shoes. In this project, I observed real users interacting with an interface, interviewed these individuals about their experiences, created personas based on these users, and illustrated a storyboard based on one of the personas.</p>
+      </section>
+      <section>
+        <h2>Preparation</h2>
+        <p>I started this assignment with a contextual inquiry into some public-facing interface. I had to choose some interface to observe, create interview questions, and conduct interviews with users of the interface.</p>
+        <p>I chose a washing machine that is located in the shared common area in my building as my interface. It was accessible to any person in my building and it would not be strange or uncomfortable to be observed using this washing machine.</p>
+        <p>This interface is complex and has multiple moving parts, which are drawn and annotated here. The machine has two parts: a door/chamber and an "options bar", which contains a drawer, a dial with settings, and a screen with buttons attached.</p>
+        <figure>
+          <img src='assets/interface_sketch.png' alt=''/>
+          <figcaption>sketch of washing machine interface (<a href='assets/interface_sketch.png'>enlarge sketch</a>)</figcaption>
+        </figure>
+        <p>The screen responds to user input via the buttons and all of the buttons and dial make sounds when used. The interface here allows users to customize and begin the clothes-washing process.</p>
+      </section>
+      <section>
+        <h2>Recording Observations</h2>
+        <p>During my preparations, I designed a few interview questions to ask users of the washing machine to gauge their perceptions of the interface. I observed a total of three users, taking note of their use of the machine and recording their responses to my interview questions.</p>
+        <p>These questions are:</p>
+        <ol>
+          <li>What part of this washing machine did you look at first?</li>
+          <li>Is there any part of this washing machine that frustrates you?</li>
+          <li>Is there any part of this washing machine that you don't know “how it works”?</li>
+          <li>How does using this washing machine compare to other washing machines like it that you have used in the past?</li>
+        </ol>
+        <details>
+          <summary>Here, I have enumerated my observations of the users and their responses to the questions, with anonymized names. <span class="link">Click here to expand to see the full descriptions.</span></summary>
+          <article>
+            <figure class='left'>
+              <figcaption>User #1</figcaption>
+              <p>Observed use of interface:</p>
+              <ul>
+                <li>open door, first from incorrect side</li>
+                <li>load clothes into chamber then close door</li>
+                <li>turn on machine with power button</li>
+                <li>set the dial to the correct setting, overshooting then correcting to the desired position</li>
+                <li>realize forgotten detergent, turn machine off, add detergent to left hole, then turn back on machine</li>
+                <li>hold the start button and leave</li>
+              </ul>
+              <p>Response to questions:</p>
+              <ol>
+                <li>First the door, mainly to check if anything is still in the chamber, since it's a shared machine.</li>
+                <li>Sometimes, the buttons have a delay or don't respond the way I think they should. Also, the door locks when it starts running--it's inconvenient when I forget one thing, like a sock.</li>
+                <li>I don't understand how it detects how much I put in. I can tell because the time changes from load to load, but I have no idea how this is calculated.</li>
+                <li>It's much better than my old dorm one--it malfunctions less and I don't have to pay to use it. It's also easier, probably because there's no payment system. My old home washing machine is a top-loader, which I like because my clothes are further from the ground. Here, my clothes sometimes fall on the dirty ground, which I don't like.</li>
+              </ol>
+            </figure>
+            <figure class='middle'>
+              <figcaption>User #2</figcaption>
+              <p>Observed use of the interface:</p>
+              <ul>
+                <li>open door, look for any clothes left behind from previous user, put in clothes</li>
+                <li>turn on machine with power button</li>
+                <li>look at the dial and read the descriptive text, setting it to the desired position</li>
+                <li>read the labels on the buttons and select appropriate ones</li>
+                <li>add detergent to left hole</li>
+                <li>hold the start button and wait for the spin cycle to start before leaving</li>
+              </ul>
+              <p>Response to questions:</p>
+              <ol>
+                <li>I look at the little screen with the options on it.</li>
+                <li>I don't like the start button. If you don't hold it down long enough, it doesn't start. I usually wait before I leave because, in the past, it hasn't started before.</li>
+                <li>I'm not sure what the sensors do for the “soil level” option. What changes in the machine? The temp and spin options make sense, but not soil level. I think it somehow senses weight but I don't know how.</li>
+                <li>This one is much better than top-loaders: with those, you just pour the detergent right in and get an uneven distribution. It’s harder to deal with clothes with that configuration (my clothes were soaking wet). I like that it opens from the front instead. The little screen makes me feel like I have more control and more customization.</li>
+              </ol>
+            </figure>
+            <figure class='right'>
+              <figcaption>User #3</figcaption>
+              <p>Observed use of the interface:</p>
+              <ul>
+                <li>open door and put clothes in</li>
+                <li>pick up detergent and pour into all of the holes</li>
+                <li>press the power on, then hold the power on when it doesn't start</li>
+                <li>spin the dial with one finger, landing on the "normal" setting</li>
+                <li>hold the on button then leave</li>
+              </ul>
+              <p>Response to questions:</p>
+              <ol>
+                <li>I first look at the menu bar on the wheel thing, then at the door.</li>
+                <li>I hate all of it. One thing is that there is no rational connection between the type of load I am doing and the amount of time it takes to complete a cycle.</li>
+                <li>The detergent container has two different holes, and I don't know the difference. I just end up pouring in both.</li>
+                <li>It's the newest one for me, so I have the least experience. It has a “nice”, newer feel. No coins are needed and it has higher-tech technology.</li>
+              </ol>
+            </figure>
+          </article>
+        </details>
+        <hr />
+        <h3>Summary of Key Observations</h3>
+        <p>When observing users of the interface, I noticed a few things about how users typically interact with the washing machine. Here are some key takeaways.</p>
+        <ul>
+          <li>multiple users opened the door from the wrong side</li>
+          <li>every user adjusted the dial, but only one used the buttons next to the screen</li>
+          <li>each user added detergent in a different way</li>
+        </ul>
+        <hr />
+        <h3>Summary of Interview Responses</h3>
+        <p>After interviewing each user, they all had different responses to my questions, but here's a summary of what they said.</p>
+        <ul>
+          <li>Each user looked at a different part of the interface first: one at the door/chamber, another at the screen, and the last at the dial.</li>
+          <li>Multiple users reported not understanding how the washing machine sensed weight/decided how long to run.</li>
+          <li>One user mentioned that they liked this interface more than "top-loader" laundry machines, while another user expressed the inverse opinion.</li>
+          <li>There were several comments about unresponsiveness--one about all of the buttons in general and one specifically about the "start" button, which needed to be held down for an extended period of time.</li>
+          <li>One respondent mentioned that they always read over every option and setting before deciding on what selections they would make.</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Personas</h2>
+        <p>Having collected these observations about users, I used that information to build personas. These personas are based on overarching trends, not specific users that I interviewed. Despite this, my interviewees <em>mostly</em> aligned with one persona, but not exclusively.</p>
+        <p>Below are two four-quadrant empathy maps of different personas, each of which represents what that persona would think, feel, say, and do.</p>
+        <hr />
+        <h3>Persona 1: Flustered Frankie</h3>
+        <i>Scattered, yet cautious: worried about "messing up" and wants to get things done easily.</i>
+        <p>This persona represents users of the washing machine who are aware of the public nature of the device and want to be extra considerate of those around them. Additionally, this user gets overwhelmed by choices and options, so prefers the interface to be clear and concise.</p>
+        <p>Potential problems with the interface:</p>
+        <ul>
+          <li>There are lots of buttons with text on them, which means spending more time avoiding mistakes.</li>
+          <li>The door is not transparent, meaning you need to open it in order to check if there are any clothes currently in the machine.</li>
+          <li>You must hold down the start button, with no indication of when is "long enough."</li>
+        </ul>
+        <figure>
+          <img src='assets/flustered_frankie.png' alt=''/>
+          <figcaption>Empathy map of Flustered Frankie (<a href='assets/flustered_frankie.png'>enlarge image</a>)</figcaption>
+        </figure>
+        <hr />
+        <h3>Persona 2: Controlling Carol</h3>
+        <i>Wants control over everything: loves lots of customization and options on everything.</i>
+        <p>This persona represents users of the washing machine that like to know exactly what the machine is doing and how they can change it. These users might have clothes that require special care, or might want to wash clothes in some particular way to save time, money, etc.</p>
+        <p>Potential problems with the interface:</p>
+        <ul>
+          <li>Some of the functionality is obscured behind labels that don't clearly define what they change (soil, etc).</li>
+          <li>The detergent drawer lacks clear labels for each compartment, making the segmentation less clear.</li>
+          <li>It's not immediately clear how the cycle time is calculated.</li>
+        </ul>
+        <figure>
+          <img src='assets/controlling_carol.png' alt=''/>
+          <figcaption>Empathy map of Controlling Carol (<a href='assets/controlling_carol.png'>enlarge image</a>)</figcaption>
+        </figure>
+      </section>
+      <section>
+        <h2>Storyboarding</h2>
+        <p>For this last section, I created a storyboard depicting a hypothetical scenario that one of my personas, Flustered Frankie, might encounter.</p>
+        <p>The struggles of this persona and their interactions with the interface are highlighted, with each frame depicting a different part of the story.</p>
+        <figure>
+          <img src='assets/storyboard.png' class='important-img' alt="comic strip with nine frames. they are captioned: Frankie carries their clothes down the stairs using a hamper. They are struggling. In the rush, Frankie drops one of their socks on the floor. Frankie picks up the sock, loosing their balance and almost fallign over. Frankie goes to use one washing machine, but finds it occupied after opening the door. They proceed to the next one, fortunately finding it empty. As they load their clothes in, Frankie knocks thier hamper over, spilling more clothes. Frankie stares at the options on the machine, but is confused by all the options. They pick some at random. Someone else enters and startles Frankie! They fall over and apologize. In the rush to leave, Frankie doesn't press the 'start' button for long enough, and the machine doesn't start washing."/>
+          <figcaption>Storyboard depicting Flustered Frankie using a washing machine (<a href='assets/storyboard.png'>enlarge image</a>)</figcaption>
+        </figure>
+        <p>This storyboard highlights four parts of the interface and Flustered Frankie's troubles involving it. To be specific:</p>
+        <ol>
+          <li>The doors are not transparent, meaning they have to check multiple machines to find an empty one.</li>
+          <li>The machine is a "side-loader", not a "top-loader", so the door is closer to the ground and makes dropping clothes easier.</li>
+          <li>The dial and menu screen have too many options for Flustered Frankie to process.</li>
+          <li>The start button must be held for an extended period of time, which was not done successfully in the storyboard.</li>
+        </ol>
+      </section>
+    </main>
+
+
+    <footer>
+      <section class="left">
+        <h3>UI/UX Portfolio</h3>
+        <p>Thanks for checking out my page! This site was made for a portfolio project for a <a href="https://cs.brown.edu/courses/csci1300/">UI/UX course</a> at Brown.</p>
+      </section>
+      <section class="right">
+        <h3>Contact me!</h3>
+        <p>If you want to get in touch, feel free to contact me at <a href="mailto:shyworm@notarealemail.com">shyworm@notarealemail.com</a>.</p>
+      </section>
+    </footer>
+  </body>
+  <script type="text/javascript" src="./js/index.js"></script>
+</html>
