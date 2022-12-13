@@ -205,6 +205,11 @@ main section figure figcaption {
   text-align: center;
 }
 
+main section figure figcaption ul {
+  list-style: none;
+  padding: 0;
+}
+
 figure img {
   display: block;
   width: auto;
@@ -263,7 +268,31 @@ article figure figcaption {
 }
 
 iframe {
-  width: 100%;
+  max-width: 100%;
+  border: 1px solid rgb(29, 25, 57);
+}
+
+video {
+  max-width: 100%;
+  border: 1px solid rgb(29, 25, 57);
+  margin-bottom: 1%;
+}
+
+table, th, td {
+  border: 1px solid rgb(29, 25, 57);
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+}
+
+#left-col-header {
+  border-right: 1px solid rgb(64, 55, 123);
+}
+
+#right-col-header {
+  border-left: 1px solid rgb(64, 55, 123);
 }
 /* main section */
 
