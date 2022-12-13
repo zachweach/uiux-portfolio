@@ -4,10 +4,10 @@
 .gallery .card { position: relative; } 
 
 .gallery > :nth-child(3n+1) {
-  background-color: #579bce;
+  background-color: #3278AE;
 }
 .gallery > :nth-child(3n+2) {
-  background-color: #1a7dc9;
+  background-color: #104F7E;
 }
 .gallery > :nth-child(3n+3) {
   background-color: #1b719e;
