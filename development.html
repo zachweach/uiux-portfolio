@@ -3,25 +3,44 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Brown Theatre Collective</title>
+    <title>shyworm</title>
     <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="./style/gallery.css">
-    <link rel="icon" type="image/x-icon" href="./assets/btc.ico">
+    <link rel="icon" type="image/x-icon" href="./assets/logo.ico">
   </head>
   <body>
     <header>
       <a href="./" id="title">hi, im shyworm!</a>
       <button id="hamburger-menu"></button>
       <nav id="navbar">
+        <a href="./">home</a>
         <a href="./personas">personas</a>
         <a href="./redesign">responsive redesign</a>
         <a href="./iterative">iterative design</a>
         <a href="./development">development</a>
       </nav>
     </header>
-    
-    <h1>TODO</h1>
-    
+    <main>
+      <section>
+        <h1>Development</h1>
+        <p>This project features an interactive interface using interface components and several internal data states. Using React, this list-based interface expands on <a href="https://cab.brown.edu/">Courses @ Brown</a>, which allows students at Brown University to browse course offerings.</p>
+      </section>
+      <section>
+        <h2>Design choices</h2>
+        <h3>Displaying the list of courses</h3>
+        <p>Each course is displayed using a card component, which takes in React props to display the proper course information and image.</p>
+        <p>The data for each course is currently pulled from a local file, but could support reading any JSON file, including one pulled from the internet or an API.</p>
+        <h3>Sorting and Filtering</h3>
+        <p>The user can filter by department and course level and can sort by a variety of criteria, some of which is gathered from <a href="https://thecriticalreview.org">The Critical Review</a>.</p>
+        <p>In order to keep track of all of the conditions that the user wants to filter and sort by, a state is used that contains a list of all the currently applied filters and sort.</p>
+        <p>By default, no boxes are checked, and the list can be reset using the "All" filters and sorting by course number, which is the defualt.</p>
+      </section>
+      <section>
+        <h2>Website implementation</h2>
+        <p>Check out the <a href="https://shyworm130.github.io/">finalized site.</a></p>
+        <iframe src="https://shyworm130.github.io/" width="100%" height="500">
+          <p>Your browser does not support iframes.</p>
+        </iframe>  
+      </section>
     </main>
     <footer>
       <section class="left">

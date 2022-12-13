@@ -10,6 +10,7 @@
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .gallery .card {
@@ -20,11 +21,15 @@
   flex: 20%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
+  border-radius: 5%;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
 }
 
-.gallery .card a:not(:has(img)) {
+.gallery .card a {
   color: #fff;
   font-weight: bold;
   font-size: 180%;
@@ -36,6 +41,33 @@
 .gallery .card a:hover {
   color: #fff;
   text-decoration: underline;
+}
+
+.gallery .block {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1rem
+}
+
+.gallery .block h3, .gallery .block li {
+  flex: 100%;
+  color: #fff;
+  line-height: 120%;
+  margin: 0.5rem;
+}
+
+.gallery .block a {
+  color: #fff;
+  border-color: rgb(255, 255, 255, 0.7);
+}
+
+.gallery .block a:hover {
+  color: #fff;
+  border-color: rgb(255, 255, 255, 1);
 }
 
 @media screen and (max-width: 767px) {
@@ -51,24 +83,15 @@
   }
 }
 
-.gallery .card:has(a):nth-child(3n+1) {
-  background-color: #7fc7ff;
+.gallery > :nth-child(3n+1) {
+  background-color: #579bce;
 }
-.gallery .card:has(a):nth-child(3n+2) {
-  background-color: #2ea4ff;
+.gallery > :nth-child(3n+2) {
+  background-color: #1a7dc9;
 }
-.gallery .card:has(a):nth-child(3n+3) {
+.gallery > :nth-child(3n+3) {
   background-color: #1b719e;
 }
-.gallery .card:has(a):nth-child(3n+4) {
+.gallery > :nth-child(3n+4) {
   background-color: #1376bb;
-}
-
-.gallery .card a:has(.card-image) {
-  padding: 0;
-}
-
-.gallery .card a img {
-  aspect-ratio: 1;
-  object-fit: cover;
 }
