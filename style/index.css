@@ -261,6 +261,10 @@ article figure figcaption {
   display: block;
   white-space: pre;
 }
+
+iframe {
+  width: 100%;
+}
 /* main section */
 
 

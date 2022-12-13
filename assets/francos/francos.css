@@ -1,0 +1,228 @@
+/* jeff's css reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* jeff's css reset */
+
+body {
+  margin: 0;
+  background-color: #000;
+  background-image: url("assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#skip-to-main {
+  background: #521800;
+  color: #fff;
+  height: 30px;
+  left: 50%;
+  padding: 8px; 
+  position: absolute;
+  transform: translateY(-100%);
+  transition: transform 0.3s;
+  /* adapted from https://css-tricks.com/how-to-create-a-skip-to-content-link/ */
+}
+
+#skip-to-main:focus {
+  transform: translateY(0%);
+}
+
+header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 6%;
+}
+
+header > span {
+  font-size: 2.5rem;
+  text-align: center;
+  line-height: 5rem;
+}
+
+#hamburger {
+  height: 5rem;
+  padding: 1rem 0;
+}
+
+#hamburger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  /* hide nav in mobile view */
+  display: none;
+}
+
+nav > a.active {
+  color: #f6304e;
+}
+
+nav > a:hover {
+  color: #f6304e;
+}
+
+main {
+  background-color: #521900d9;
+  padding: 5% 0;
+  color: #fff;
+  width: min(100% - 2rem, 1024px);
+  margin-inline: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5% 2%;
+}
+
+h2 {
+  padding-bottom: 2%;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+main img {
+  margin: 0 auto;
+  width: 60%;
+  padding: 2% 0;
+}
+
+article {
+  padding: 5%;
+  margin-bottom: 5%;
+}
+
+figure p, figure address {
+  font-weight: bold;
+  font-style: normal;
+}
+
+address > a {
+  color: #fff;
+}
+
+address > a:hover {
+  color: #f6304e;
+}
+
+ul {
+  margin-bottom: 2%;
+}
+
+ul > li {
+  line-height: 175%;
+}
+
+article > p {
+  padding: 3% 0;
+  line-height: 175%;
+}
+
+figcaption {
+  line-height: 175%;
+}
+
+h3 {
+  padding-top: 10%;
+}
+
+main > img {
+  width: 75%;
+  max-width: 35rem;
+  padding-bottom: 10%;
+}
+
+/* mobile-first design pattern */
+/* if tablet or larger */
+@media (min-width: 600px) {
+  #hamburger {
+    display: none;
+  }
+
+  main {
+    padding: 0;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  header {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  header > span {
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 2%;
+  }
+
+  article {
+    padding-top: 0;
+  }
+
+  figure {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  figure > img {
+    max-width: 40%;
+    padding: 0;
+    margin-left: 0;
+  }
+
+  figure > figcaption {
+    width: 55%;
+  }
+}
+
+/* if larger than tablet */
+@media (min-width: 1024px) {
+  header {
+    flex-direction: row;
+  }
+  
+  nav {
+    width: 50%;
+    justify-content: space-between;
+  }
+
+  article {
+    margin-bottom: 2%;
+  }
+  article > p {
+    padding: 1.5% 0;
+  }
+
+  h3 {
+    padding-top: 3%;
+  }
+}
+
+.phone {
+  unicode-bidi: embed;
+}
