@@ -9,7 +9,7 @@ function hamToggle() {
 ham.addEventListener("click", hamToggle)
 
 
-const titles = ['undefined', 'NaN', 'a designer', 'a scientist', 'a neuroscientist', 'a computer (beep boop)', 'a website', 'a performer', 'becoming self-aware', 'uhhhhhhh...', 'a musician', 'an oversharer', 'a niche internet microcelebrity', 'an author', 'shyworm! but you knew that...']
+const titles = ['undefined', 'NaN', 'a designer', 'a scientist', 'a neuroscientist', 'a computer (beep boop)', 'a website', 'a performer', 'becoming self-aware', 'uhhhhhhh...', 'a musician', 'an oversharer', 'a niche internet microcelebrity', 'an author', 'zach! but you knew that...']
 let currId;
 const rotater = document.getElementById("rotater")
 const title = document.getElementById("rotating-title")
