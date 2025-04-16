@@ -31,7 +31,7 @@ main, header {
   margin: 2rem max(10%, 1rem);
 }
 
-h1, h2, h3, p, a {
+h1, h2, h3, p {
   color: rgb(34, 34, 34);
 }
 
@@ -293,6 +293,33 @@ th, td {
 
 #right-col-header {
   border-left: 1px solid rgb(64, 55, 123);
+}
+
+#resume-button {
+  background-color: #1473b8;
+  color: #fff;
+  text-decoration: underline;
+  border: none;
+  font-variant: normal;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 1rem;
+}
+#resume-button:hover {
+  color: rgb(255,255,255,0.9);
+	text-decoration: underline;
+  cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem auto;
 }
 /* main section */
 
